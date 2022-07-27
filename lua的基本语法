@@ -1,0 +1,41 @@
+lua语言提供了交互式编程，这意味着你可以像编译其他语言比如c那样，举个例子
+
+创建一个demo1.lua
+
+输入
+
+print("hello green book")
+
+保存退出
+
+然后运行
+lua demo1.lua
+
+输出为
+hello green book
+
+lua也提供了脚本式的编程
+将上述代码的首行添加一行代码
+--***********--
+#!/usr/local/bin/lua
+
+print("hello green book")
+
+
+--***********--
+
+保存退出执行脚本
+./demo1.lua
+hello green book
+输出
+hello green book
+
+上述代码中的--。。。--是代码注释的意思
+
+如果是多行注释的话--[[
+
+
+
+--]]
+
+
