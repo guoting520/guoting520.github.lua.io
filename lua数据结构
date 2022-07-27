@@ -1,0 +1,61 @@
+lua的数据类型有8个
+
+
+分别为
+nil（相当于null） boolean（相当于bool） number（双精度的浮点数，相当于double） string(由单引号和双引号使用)
+function（函数）  userdata（存储在变量中的c数据结构） thread（相当于协程） table（为一个关联数组）
+
+
+上demo
+
+
+--*********************--
+print(type("hello world"))
+print(type(print))
+print(type(10.4*3))
+print(type(false))
+print(type(nil))
+--*********************--
+
+
+输出为：
+string
+function
+number
+boolean
+nil
+
+来看一个number类型的string类型的实例
+
+--***********************--
+print(type(string))
+print(type(2))
+
+s = "123123123"
+print(s)
+
+
+html=[[
+    <html>
+    <head></head>
+    <body>
+        <a href="http:/www.runnoob.com/">runnoob</a>
+    </body>
+    </html>
+]]
+print(html)
+--**********************--
+
+
+输出为
+table
+number
+123123123
+    <html>
+    <head></head>
+    <body>
+        <a href="http:/www.runnoob.com/">runnoob</a>
+    </body>
+    </html>
+留意***:type(string)是一个表相当于
+tab={"string"}
